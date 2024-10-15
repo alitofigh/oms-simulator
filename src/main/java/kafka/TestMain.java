@@ -95,7 +95,7 @@ public class TestMain {
                    ISOMsg response = iso.clone("0", "2","3","4","5","6");
                    response.setResponseMTI();
                    response.set(39, "00");
-                   if (iso.getString(4).equals("800000")) {
+                   if (iso.getString(3).equals("800000")) {
                        KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
                        keyGenerator.init(128);
                        SecretKey key = keyGenerator.generateKey();
